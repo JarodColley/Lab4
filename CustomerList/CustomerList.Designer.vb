@@ -45,9 +45,10 @@ Partial Class frmCustomerList
         '
         'btnEnter
         '
-        Me.btnEnter.Location = New System.Drawing.Point(95, 422)
+        Me.btnEnter.Location = New System.Drawing.Point(127, 519)
+        Me.btnEnter.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnEnter.Name = "btnEnter"
-        Me.btnEnter.Size = New System.Drawing.Size(75, 23)
+        Me.btnEnter.Size = New System.Drawing.Size(100, 28)
         Me.btnEnter.TabIndex = 9
         Me.btnEnter.Text = "&Enter"
         Me.CustomerToolTip.SetToolTip(Me.btnEnter, "Click to add a customer.")
@@ -56,9 +57,10 @@ Partial Class frmCustomerList
         'btnReset
         '
         Me.btnReset.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnReset.Location = New System.Drawing.Point(176, 422)
+        Me.btnReset.Location = New System.Drawing.Point(235, 519)
+        Me.btnReset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnReset.Name = "btnReset"
-        Me.btnReset.Size = New System.Drawing.Size(75, 23)
+        Me.btnReset.Size = New System.Drawing.Size(100, 28)
         Me.btnReset.TabIndex = 10
         Me.btnReset.Text = "&Reset"
         Me.CustomerToolTip.SetToolTip(Me.btnReset, "Click to reset the screen.")
@@ -66,9 +68,10 @@ Partial Class frmCustomerList
         '
         'btnExit
         '
-        Me.btnExit.Location = New System.Drawing.Point(257, 422)
+        Me.btnExit.Location = New System.Drawing.Point(343, 519)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.Size = New System.Drawing.Size(100, 28)
         Me.btnExit.TabIndex = 11
         Me.btnExit.Text = "E&xit"
         Me.CustomerToolTip.SetToolTip(Me.btnExit, "Click to exit the application.")
@@ -76,17 +79,19 @@ Partial Class frmCustomerList
         '
         'tbFirstName
         '
-        Me.tbFirstName.Location = New System.Drawing.Point(84, 34)
+        Me.tbFirstName.Location = New System.Drawing.Point(112, 42)
+        Me.tbFirstName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbFirstName.Name = "tbFirstName"
-        Me.tbFirstName.Size = New System.Drawing.Size(121, 20)
+        Me.tbFirstName.Size = New System.Drawing.Size(160, 22)
         Me.tbFirstName.TabIndex = 3
         Me.CustomerToolTip.SetToolTip(Me.tbFirstName, "Type the customer's first name here.")
         '
         'tbLastName
         '
-        Me.tbLastName.Location = New System.Drawing.Point(84, 60)
+        Me.tbLastName.Location = New System.Drawing.Point(112, 74)
+        Me.tbLastName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tbLastName.Name = "tbLastName"
-        Me.tbLastName.Size = New System.Drawing.Size(121, 20)
+        Me.tbLastName.Size = New System.Drawing.Size(160, 22)
         Me.tbLastName.TabIndex = 5
         Me.CustomerToolTip.SetToolTip(Me.tbLastName, "Type the customer's last name here.")
         '
@@ -95,26 +100,29 @@ Partial Class frmCustomerList
         Me.cmbTitles.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbTitles.FormattingEnabled = True
         Me.cmbTitles.Items.AddRange(New Object() {"Mr.", "Mrs.", "Miss.", "Ms.", "Mstr.", "Dr."})
-        Me.cmbTitles.Location = New System.Drawing.Point(84, 7)
+        Me.cmbTitles.Location = New System.Drawing.Point(112, 9)
+        Me.cmbTitles.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.cmbTitles.Name = "cmbTitles"
-        Me.cmbTitles.Size = New System.Drawing.Size(121, 21)
+        Me.cmbTitles.Size = New System.Drawing.Size(160, 24)
         Me.cmbTitles.TabIndex = 1
         Me.CustomerToolTip.SetToolTip(Me.cmbTitles, "Select the customer's title.")
         '
         'lbTitle
         '
-        Me.lbTitle.Location = New System.Drawing.Point(12, 7)
+        Me.lbTitle.Location = New System.Drawing.Point(13, 12)
+        Me.lbTitle.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbTitle.Name = "lbTitle"
-        Me.lbTitle.Size = New System.Drawing.Size(66, 13)
+        Me.lbTitle.Size = New System.Drawing.Size(88, 16)
         Me.lbTitle.TabIndex = 0
         Me.lbTitle.Text = "&Title: "
         Me.lbTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lblFirstName
         '
-        Me.lblFirstName.Location = New System.Drawing.Point(12, 34)
+        Me.lblFirstName.Location = New System.Drawing.Point(16, 42)
+        Me.lblFirstName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblFirstName.Name = "lblFirstName"
-        Me.lblFirstName.Size = New System.Drawing.Size(66, 13)
+        Me.lblFirstName.Size = New System.Drawing.Size(88, 16)
         Me.lblFirstName.TabIndex = 2
         Me.lblFirstName.Text = "&First Name: "
         Me.lblFirstName.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -122,9 +130,10 @@ Partial Class frmCustomerList
         '
         'lbLastName
         '
-        Me.lbLastName.Location = New System.Drawing.Point(12, 63)
+        Me.lbLastName.Location = New System.Drawing.Point(16, 78)
+        Me.lbLastName.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbLastName.Name = "lbLastName"
-        Me.lbLastName.Size = New System.Drawing.Size(66, 13)
+        Me.lbLastName.Size = New System.Drawing.Size(88, 16)
         Me.lbLastName.TabIndex = 4
         Me.lbLastName.Text = "&Last Name: "
         Me.lbLastName.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -132,9 +141,10 @@ Partial Class frmCustomerList
         'chkVIP
         '
         Me.chkVIP.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.chkVIP.Location = New System.Drawing.Point(51, 83)
+        Me.chkVIP.Location = New System.Drawing.Point(68, 102)
+        Me.chkVIP.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.chkVIP.Name = "chkVIP"
-        Me.chkVIP.Size = New System.Drawing.Size(46, 24)
+        Me.chkVIP.Size = New System.Drawing.Size(61, 30)
         Me.chkVIP.TabIndex = 6
         Me.chkVIP.Text = "&VIP:"
         Me.chkVIP.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -147,10 +157,11 @@ Partial Class frmCustomerList
         Me.lvwCustomers.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.colVIP, Me.colID, Me.colTitle, Me.colFirstName, Me.colLastName})
         Me.lvwCustomers.FullRowSelect = True
         Me.lvwCustomers.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.lvwCustomers.Location = New System.Drawing.Point(2, 108)
+        Me.lvwCustomers.Location = New System.Drawing.Point(3, 133)
+        Me.lvwCustomers.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lvwCustomers.MultiSelect = False
         Me.lvwCustomers.Name = "lvwCustomers"
-        Me.lvwCustomers.Size = New System.Drawing.Size(330, 246)
+        Me.lvwCustomers.Size = New System.Drawing.Size(439, 302)
         Me.lvwCustomers.TabIndex = 7
         Me.CustomerToolTip.SetToolTip(Me.lvwCustomers, "Select a customer to modify.")
         Me.lvwCustomers.UseCompatibleStateImageBehavior = False
@@ -179,19 +190,20 @@ Partial Class frmCustomerList
         'lbResult
         '
         Me.lbResult.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lbResult.Location = New System.Drawing.Point(2, 357)
+        Me.lbResult.Location = New System.Drawing.Point(3, 439)
+        Me.lbResult.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lbResult.Name = "lbResult"
-        Me.lbResult.Size = New System.Drawing.Size(330, 60)
+        Me.lbResult.Size = New System.Drawing.Size(440, 74)
         Me.lbResult.TabIndex = 8
         Me.CustomerToolTip.SetToolTip(Me.lbResult, "Success or Error message will appear here.")
         '
         'frmCustomerList
         '
         Me.AcceptButton = Me.btnEnter
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnReset
-        Me.ClientSize = New System.Drawing.Size(334, 452)
+        Me.ClientSize = New System.Drawing.Size(445, 556)
         Me.Controls.Add(Me.lbResult)
         Me.Controls.Add(Me.lvwCustomers)
         Me.Controls.Add(Me.chkVIP)
@@ -204,6 +216,7 @@ Partial Class frmCustomerList
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnReset)
         Me.Controls.Add(Me.btnEnter)
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "frmCustomerList"

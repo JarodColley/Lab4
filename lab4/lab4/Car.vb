@@ -120,6 +120,10 @@ Public Class Car
         End Set
     End Property
 
+    ''' <summary>
+    ''' getCarData provides all the cars data in a string formate
+    ''' </summary>
+    ''' <returns>String</returns>
     Public Function GetCarData() As String
         Return "my Car is " & carMake & " " & carModel & " " & carYear & " " & carPrice & ", " & IIf(newStatus = True, "I am a VIP", "I am not a VIP").ToString()
     End Function

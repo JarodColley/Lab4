@@ -100,6 +100,7 @@ Partial Class FrmMain
         Me.chkNew.TabIndex = 5
         Me.chkNew.Text = "&New:"
         Me.chkNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.ToolTip.SetToolTip(Me.chkNew, "check if the car is new")
         Me.chkNew.UseVisualStyleBackColor = True
         '
         'lbLastName
@@ -143,6 +144,7 @@ Partial Class FrmMain
         Me.cmbMake.Name = "cmbMake"
         Me.cmbMake.Size = New System.Drawing.Size(160, 24)
         Me.cmbMake.TabIndex = 1
+        Me.ToolTip.SetToolTip(Me.cmbMake, "list of car makes")
         '
         'txtModel
         '
@@ -200,6 +202,7 @@ Partial Class FrmMain
         Me.cmbYear.Name = "cmbYear"
         Me.cmbYear.Size = New System.Drawing.Size(160, 24)
         Me.cmbYear.TabIndex = 3
+        Me.ToolTip.SetToolTip(Me.cmbYear, "list of years")
         '
         'Label1
         '
