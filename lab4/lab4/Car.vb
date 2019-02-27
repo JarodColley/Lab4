@@ -119,4 +119,8 @@ Public Class Car
             carMake = value
         End Set
     End Property
+
+    Public Function GetCarData() As String
+        Return "my Car is " & carMake & " " & carModel & " " & carYear & " " & carPrice & ", " & IIf(newStatus = True, "I am a VIP", "I am not a VIP").ToString()
+    End Function
 End Class
