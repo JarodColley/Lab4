@@ -11,6 +11,7 @@ Public Class FrmMain
     Private currentCarIdentificationNumber As String = String.Empty ' current selected car identification number
     Private editMode As Boolean = False
     Private Sub btnEnter_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
-
+        Dim car As Car                 'declares a Car class
+        Dim carItem As ListViewItem    ' declares a ListViewItem class
     End Sub
 End Class
