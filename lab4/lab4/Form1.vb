@@ -7,6 +7,9 @@
 ''' </summary>
 
 Public Class FrmMain
+    Private carList As New SortedList                                ' collection of all the carList in the list
+    Private currentCarIdentificationNumber As String = String.Empty ' current selected car identification number
+    Private editMode As Boolean = False
     Private Sub btnEnter_Click(sender As Object, e As EventArgs) Handles btnEnter.Click
 
     End Sub

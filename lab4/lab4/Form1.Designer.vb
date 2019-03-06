@@ -30,6 +30,7 @@ Partial Class FrmMain
         Me.colMake = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.colModel = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.colYear = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.colPrice = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chkNew = New System.Windows.Forms.CheckBox()
         Me.lbLastName = New System.Windows.Forms.Label()
         Me.lblFirstName = New System.Windows.Forms.Label()
@@ -39,7 +40,6 @@ Partial Class FrmMain
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnReset = New System.Windows.Forms.Button()
         Me.btnEnter = New System.Windows.Forms.Button()
-        Me.colPrice = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.cmbYear = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtPrice = New System.Windows.Forms.TextBox()
@@ -89,6 +89,10 @@ Partial Class FrmMain
         'colYear
         '
         Me.colYear.Text = "Year"
+        '
+        'colPrice
+        '
+        Me.colPrice.Text = "Price"
         '
         'chkNew
         '
@@ -187,10 +191,6 @@ Partial Class FrmMain
         Me.btnEnter.Text = "&Enter"
         Me.ToolTip.SetToolTip(Me.btnEnter, "press to enter data")
         Me.btnEnter.UseVisualStyleBackColor = True
-        '
-        'colPrice
-        '
-        Me.colPrice.Text = "Price"
         '
         'cmbYear
         '
