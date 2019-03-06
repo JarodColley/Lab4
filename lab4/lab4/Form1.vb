@@ -203,6 +203,34 @@ Public Class FrmMain
             e.NewValue = e.CurrentValue
 
         End If
+    End Sub
+    ''' <summary>
+    ''' lvwCustomers_SelectedIndexChanged - when the user selected a row in the list it will populate the fields for editing
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub lvwCustomers_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lvwCustomers.SelectedIndexChanged
+
+        ' constant that represents the index of the subitem in the list that
+        ' holds the car identification number 
+        Const identificationSubItemIndex As Integer = 1
+
+        ' Get the car identification number 
+        currentCarIdentificationNumber = lvwCustomers.Items(lvwCustomers.FocusedItem.Index).SubItems(identificationSubItemIndex).Text
+
+        ' Use the customer identification number to get the customer from the collection object
+        Dim car As Car = CType(carList.Item(currentCarIdentificationNumber), Car)
+
+        ' set the controls on the form
+        cmbMake.Text = car.Make                             ' get the make and set it into the combo box
+        txtModel.Text = car.Model                           ' get the cars model and set it in the text box
+        cmbYear.Text = car.Year.ToString()                  ' get the cars year and sets it into the combo box
+        txtPrice.Text = car.Price.ToString()                ' get the cars Price and sets it into the text box
+        chkNew.Checked = car.Status                         ' get the status and sets checkbox 
+
+        lblResult.Text = car.GetCarData()
+
 
     End Sub
+
 End Class
