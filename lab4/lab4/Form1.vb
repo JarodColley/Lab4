@@ -95,7 +95,22 @@ Public Class FrmMain
         End If
 
     End Sub
+    ''' <summary>
+    ''' Reset - set the controls back to their default state.
+    ''' </summary>
+    Private Sub Reset()
 
+        cmbMake.SelectedIndex = -1
+        txtModel.Text = String.Empty
+        cmbYear.SelectedIndex = -1
+        txtPrice.Text = String.Empty
+        chkNew.Checked = False
+
+        lblResult.Text = String.Empty
+
+        currentCarIdentificationNumber = String.Empty
+
+    End Sub
     ''' <summary>
     ''' IsValidInput - validates the data in each control to ensure that the user has entered apprpriate values
     ''' </summary>
