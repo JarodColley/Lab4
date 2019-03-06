@@ -105,7 +105,6 @@ Public Class FrmMain
         cmbYear.SelectedIndex = -1
         txtPrice.Text = String.Empty
         chkNew.Checked = False
-
         lblResult.Text = String.Empty
 
         currentCarIdentificationNumber = String.Empty
@@ -178,4 +177,32 @@ Public Class FrmMain
         Return returnValue
 
     End Function
+
+    Private Sub btnReset_Click(sender As Object, e As EventArgs) Handles btnReset.Click
+        'calls the reset Sub
+        Reset()
+    End Sub
+
+    Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
+        'closes the form
+        Me.Close()
+    End Sub
+    ''' <summary>
+    ''' lvwCustomers_ItemCheck - used to prevent the user from checking the check box in the list view
+    '''                        - if it is not in edit mode
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub lvwCustomers_ItemCheck(sender As Object, e As ItemCheckEventArgs) Handles lvwCustomers.ItemCheck
+
+        ' if it is not in edit mode
+        If editMode = False Then
+
+            ' the new value to the current value
+            ' so it cannot be set in the listview by the user
+            e.NewValue = e.CurrentValue
+
+        End If
+
+    End Sub
 End Class
