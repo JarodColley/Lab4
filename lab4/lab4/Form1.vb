@@ -29,7 +29,7 @@ Public Class FrmMain
             If currentCarIdentificationNumber.Trim.Length = 0 Then
 
                 ' create a new car object using the parameterized constructor
-                car = New Car(cmbMake.Text, txtModel.Text, Convert.ToInt32(cmbYear.Text), Convert.ToInt32(txtPrice.Text), chkNew.Checked)
+                car = New Car(cmbMake.Text, txtModel.Text, Convert.ToInt32(cmbYear.Text), Convert.ToDouble(txtPrice.Text), chkNew.Checked)
 
                 ' add the customer to the customerList collection
                 ' using the identification number as the key
@@ -52,7 +52,7 @@ Public Class FrmMain
                 car.Make = cmbMake.Text
                 car.Model = txtModel.Text
                 car.Year = Convert.ToInt32(cmbYear.Text)
-                car.Price = Convert.ToInt32(txtPrice.Text)
+                car.Price = Convert.ToDouble(txtPrice.Text)
                 car.Status = chkNew.Checked
             End If
 
@@ -118,6 +118,8 @@ Public Class FrmMain
 
         Dim returnValue As Boolean = True
         Dim outputMessage As String = String.Empty
+        Dim userInputPrice As Double
+
 
         ' check if the Make has been selected
         If cmbMake.SelectedIndex = -1 Then
@@ -159,8 +161,15 @@ Public Class FrmMain
 
             ' And, set the return value to false
             returnValue = False
+        ElseIf Double.TryParse(txtPrice.Text, userInputPrice) = False Then
+            ' If not set the error message
+            outputMessage += "Please enter a number for Cars Price." & vbCrLf
+
+            ' And, set the return value to false
+            returnValue = False
 
         End If
+
 
         ' check to see if any value
         ' did not validate
