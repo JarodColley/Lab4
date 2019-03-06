@@ -81,10 +81,12 @@ Partial Class FrmMain
         'colMake
         '
         Me.colMake.Text = "Make"
+        Me.colMake.Width = 80
         '
         'colModel
         '
         Me.colModel.Text = "Model"
+        Me.colModel.Width = 80
         '
         'colYear
         '
@@ -93,6 +95,7 @@ Partial Class FrmMain
         'colPrice
         '
         Me.colPrice.Text = "Price"
+        Me.colPrice.Width = 80
         '
         'chkNew
         '
